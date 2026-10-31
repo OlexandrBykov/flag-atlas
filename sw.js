@@ -1,4 +1,4 @@
-const CACHE = 'flag-atlas-v6';
+const CACHE = 'flag-atlas-v7';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png', './vendor/d3.min.js', './vendor/topojson-client.min.js', './fonts/bricolage-grotesque-latin-600-normal.woff2', './fonts/bricolage-grotesque-latin-800-normal.woff2', './fonts/figtree-latin-400-normal.woff2', './fonts/figtree-latin-500-normal.woff2', './fonts/figtree-latin-600-normal.woff2', './fonts/figtree-latin-700-normal.woff2', './fonts/fonts.css', './fonts/onest-cyrillic-400-normal.woff2', './fonts/onest-cyrillic-500-normal.woff2', './fonts/onest-cyrillic-600-normal.woff2', './fonts/onest-cyrillic-700-normal.woff2', './fonts/onest-cyrillic-800-normal.woff2', './fonts/onest-latin-400-normal.woff2', './fonts/onest-latin-600-normal.woff2', './fonts/onest-latin-700-normal.woff2', './fonts/onest-latin-800-normal.woff2'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
